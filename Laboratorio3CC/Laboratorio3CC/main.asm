@@ -1,13 +1,13 @@
 ;******************************************************************
 ;
 ; Universidad del Valle de Guatemala 
-; IE2023:: Programación de Microcontroladores
+; IE2023:: ProgramaciÃ³n de Microcontroladores
 ; Laboratorio3CC.asm
 ; Autor: Alejandra Cardona 
 ; Proyecto: Laboratorio3
 ; Hardware: ATMEGA328P
-; Creado: 13/02/2024
-; Última modificación: 13/02/2024
+; Creado: 18/02/2024
+; Ãšltima modificaciÃ³n: 20/02/2024
 ;
 ;******************************************************************
 ; ENCABEZADO
@@ -42,7 +42,7 @@ MAIN:
 t7s: .DB 0x3F, 0x06, 0x5B, 0x4F, 0x66, 0x6D, 0x7D, 0x07, 0x7F, 0x6F, 0x77, 0x7C, 0x39, 0x5E, 0x79, 0x71
 
 ;******************************************************************
-; CONFIGURACIÓN 
+; CONFIGURACIÃ“N 
 ;******************************************************************
 
 Setup:
@@ -103,7 +103,7 @@ LEDS:
 	MOV R22, R17
 	ANDI R17, 0b0011_1111 // Solo requiero el valor de a-f
 	ANDI R22, 0b0100_0000 // Solo requiero el valor de g
-	LSL R22	//Shift a la derecha para colocar el valor que requiero de g en la posición deseada 
+	LSL R22	//Shift a la derecha para colocar el valor que requiero de g en la posiciÃ³n deseada 
 	OUT PORTD, R22
 	OUT PORTC, R17
 	RJMP LOOP
